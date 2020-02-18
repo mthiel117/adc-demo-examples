@@ -6,9 +6,9 @@ import os
 import pprint
 from requests.packages.urllib3.exceptions import InsecureRequestWarning
 
-CVP_HOST = "192.168.1.249"
-CVP_USER = "cvpadmin"
-CVP_PWD = "cvpadmin123"
+CVP_HOST = "192.168.0.5"
+CVP_USER = "arista"
+CVP_PWD = "arista"
 
 CONFIGLET_SUBDIR = 'configlets'   # subdirectory containing configlet text files
 

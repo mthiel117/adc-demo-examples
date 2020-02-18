@@ -6,5 +6,5 @@
 
   tasks:
 
-  - name: "Ping each host"
+  - name: Ping each host
     ping:

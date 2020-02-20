@@ -13,7 +13,7 @@
     register: switches
 
   - name: Create configlets
-    template: src=./templates/base-cfg.j2 dest=./configlets/{{ switch.switch_hostname }}.txt
+    template: src=./templates/base-cfg.j2 dest=./configlets/adcdemo_{{ switch.switch_hostname }}.txt
     loop: "{{ switches.list }}"
     loop_control:
       loop_var: switch

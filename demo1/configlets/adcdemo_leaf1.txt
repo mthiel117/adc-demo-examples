@@ -1,13 +1,12 @@
 !
 hostname leaf1
 !
-interface Vlan1
+interface Management1
    description Management
    ip address 192.168.0.14/24
+   no lldp transmit
+   no lldp receive
 !
-ip route 0.0.0.0/0 192.168.0.1
-!
-ip routing
 !
 management api http-commands
    no shutdown

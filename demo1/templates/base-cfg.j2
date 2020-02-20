@@ -1,13 +1,12 @@
 !
 hostname {{ switch.switch_hostname }}
 !
-interface Vlan1
+interface Management1
    description Management
    ip address {{ switch.switch_mgmt_ip }}/{{ switch.bit_mask }}
+   no lldp transmit
+   no lldp receive
 !
-ip route 0.0.0.0/0 {{ switch.default_gw }}
-!
-ip routing
 !
 management api http-commands
    no shutdown

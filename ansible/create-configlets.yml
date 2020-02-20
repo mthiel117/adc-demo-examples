@@ -13,10 +13,7 @@
     register: switches
 
   - name: Create configlets
-    #template: src=./templates/base-cfg.j2 dest=./configlets/{{ switch.switch_hostname }}.txt
-    debug:
-      msg: '{{switch.switch_hostname}} {{switch.switch_mgmt_ip}}/{{switch.bit_mask}} {{switch.default_gw}}'  
-      #var: switches
+    template: src=./templates/base-cfg.j2 dest=./configlets/{{ switch.switch_hostname }}.txt
     loop: "{{ switches.list }}"
     loop_control:
       loop_var: switch

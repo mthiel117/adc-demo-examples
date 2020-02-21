@@ -13,7 +13,8 @@ cd adc-demo-examples
 sudo cp extras/read_csv.py /usr/local/lib/python2.7/dist-packages/ansible/modules/files/.
 ```
 
-3.  In CVP Detach &amp; Remove all ADCDEMO configlets.
+3.  If the demo configlets exist (ie. 2nd run of this demo), then Detach &amp; Remove all ADCDEMO configlets.
+
  
 # Demos
 

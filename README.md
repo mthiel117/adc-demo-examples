@@ -3,6 +3,8 @@
 | --- | --- |
 | demo1 | Ansible & Python to create configs and push them to CVP, eAPI example(s) of REST calls to switches |
 
+<img src="lab-topology.png" alt="topology" width="400"/>
+
 ### Lab Nodes:
 
 | node | IP Address |

@@ -86,4 +86,12 @@ ansible-playbook vlans.yml
   - Execute Change Control Tasks to push out VLAN updates to Leafs
   - Verify changes on Leafs
 
-### 4. INSERT [eAPI Example]
+### 4. Demo eAPI Python Scripts
+Display Info from spine1 node.
+```
+./spine1-info.py
+```
+Display Info from all Nodes in Table format
+```
+./net-info.py
+```

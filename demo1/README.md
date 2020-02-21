@@ -75,12 +75,13 @@ vi group_vars/all
 ``` 
 ansible-playbook vlans.yml
 ```
-  - Push updated configlet to CVP
+  - Now Push updated configlets to CVP
 
 ```
 ./pushconfigs_to_cvp.py
 ```
-  - In CVP Change Control Tasks to push out VLAN updates to Leafs
+  - In CVP, refresh the Provisioning screen to see that new task(s) exists
+  - Execute Change Control Tasks to push out VLAN updates to Leafs
   - Verify changes on Leafs
 
 ### 4. INSERT [eAPI Example]
